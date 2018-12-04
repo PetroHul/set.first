@@ -1,3 +1,5 @@
+package Petro;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,11 +23,12 @@ public class FirstTest {
     @BeforeMethod
     public void setUp() {
         System.setProperty("webdriver.chrome.driver",
-                "E:\\[SS]SET\\SS.SET\\Automation Section\\Chrome Driver\\chromedriver.exe");
+                "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-//        driver.get("http://taqc-opencart.epizy.com");
-        driver.get("http://localhost/3.0.2.0-OpenCart/upload/index.php");
+        driver.get("http://taqc-opencart.epizy.com");
+//        driver.get("http://localhost/3.0.2.0-OpenCart/upload/index.php");
+
     }
 
     @AfterMethod
